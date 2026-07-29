@@ -16,8 +16,8 @@ import { useMediaQuery } from '@mantine/hooks'
 import { initDayjs } from '@shared/utils/time-utils'
 import { theme } from '@shared/constants'
 
-import { Router } from './app/router/router'
 import { MatrixBackdrop } from './brand/MatrixBackdrop'
+import { Router } from './app/router/router'
 
 polyfillCountryFlagEmojis()
 
