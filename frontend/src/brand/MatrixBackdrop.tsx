@@ -1,3 +1,5 @@
+import type { CSSProperties } from 'react'
+
 const streams = [
     '010010110100101101001011',
     'アイウエオカキクケコサシスセソ',
@@ -28,7 +30,7 @@ export function MatrixBackdrop() {
                                 '--stream-index': index,
                                 '--stream-delay': `${-(index * 1.37)}s`,
                                 '--stream-duration': `${13 + (index % 5) * 2.4}s`
-                            } as React.CSSProperties
+                            } as CSSProperties
                         }
                     >
                         {stream}
