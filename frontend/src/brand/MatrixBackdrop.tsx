@@ -29,7 +29,7 @@ export function MatrixBackdrop() {
                             {
                                 '--stream-index': index,
                                 '--stream-delay': `${-(index * 1.37)}s`,
-                                '--stream-duration': `${13 + (index % 5) * 2.4}s`
+                                '--stream-duration': `${14 + (index % 5) * 2.25}s`
                             } as CSSProperties
                         }
                     >
