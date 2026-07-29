@@ -17,7 +17,7 @@ const streams = [
 
 export function MatrixBackdrop() {
     return (
-        <div className="matrix-scene" aria-hidden="true">
+        <div aria-hidden="true" className="matrix-scene">
             <div className="matrix-aurora" />
             <div className="matrix-grid" />
             <div className="matrix-rain">
