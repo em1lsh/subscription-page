@@ -20,23 +20,34 @@ export const theme = createTheme({
     },
     scale: 1,
     fontSmoothing: true,
-    focusRing: 'never',
-    white: '#ffffff',
-    black: '#24292f',
+    focusRing: 'auto',
+    white: '#f4f8f5',
+    black: '#040805',
     colors: {
         dark: [
-            '#c9d1d9',
-            '#b1bac4',
-            '#8b949e',
-            '#6e7681',
-            '#484f58',
-            '#30363d',
-            '#21262d',
-            '#161b22',
-            '#0d1117',
-            '#010409'
+            '#f3f7f4',
+            '#d9e2dc',
+            '#aab8af',
+            '#7d8d82',
+            '#536158',
+            '#344139',
+            '#202a23',
+            '#121a15',
+            '#0a100c',
+            '#040805'
         ],
-
+        matrix: [
+            '#e8ffed',
+            '#c8ffd4',
+            '#9cffad',
+            '#73fa8d',
+            '#55f27a',
+            '#2dde5b',
+            '#18c947',
+            '#0fa33a',
+            '#087c2d',
+            '#03521d'
+        ],
         blue: [
             '#ddf4ff',
             '#b6e3ff',
@@ -86,13 +97,13 @@ export const theme = createTheme({
             '#471700'
         ]
     },
-    primaryShade: 8,
-    primaryColor: 'cyan',
+    primaryShade: 6,
+    primaryColor: 'matrix',
     autoContrast: true,
-    luminanceThreshold: 0.3,
+    luminanceThreshold: 0.4,
     headings: {
         fontFamily: 'Unbounded, Vazirmatn, Apple Color Emoji, Noto Sans SC, sans-serif',
         fontWeight: '600'
     },
-    defaultRadius: 'md'
+    defaultRadius: 'lg'
 })

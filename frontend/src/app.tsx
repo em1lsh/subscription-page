@@ -16,6 +16,7 @@ import { useMediaQuery } from '@mantine/hooks'
 import { initDayjs } from '@shared/utils/time-utils'
 import { theme } from '@shared/constants'
 
+import { MatrixBackdrop } from './brand/MatrixBackdrop'
 import { Router } from './app/router/router'
 
 polyfillCountryFlagEmojis()
@@ -35,10 +36,13 @@ export function App() {
                 theme={theme}
             >
                 <ModalsProvider>
-                    <Notifications position={mq ? 'top-right' : 'bottom-right'} />
-                    <NavigationProgress />
+                    <MatrixBackdrop />
+                    <div className="matrix-app-shell">
+                        <Notifications position={mq ? 'top-right' : 'bottom-right'} />
+                        <NavigationProgress />
 
-                    <Router />
+                        <Router />
+                    </div>
                 </ModalsProvider>
             </MantineProvider>
         </DirectionProvider>
