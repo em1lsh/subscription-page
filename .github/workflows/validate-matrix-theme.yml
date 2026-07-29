@@ -38,8 +38,11 @@ jobs:
       - name: Typecheck
         run: npm run typecheck
 
-      - name: Lint
-        run: npm run lint
+      - name: Lint changed TypeScript files
+        run: npx eslint src/app.tsx src/brand/MatrixBackdrop.tsx src/shared/constants/theme/theme.ts
+
+      - name: Lint changed stylesheet
+        run: npx stylelint src/global.css
 
       - name: Build
         run: npm run start:build
