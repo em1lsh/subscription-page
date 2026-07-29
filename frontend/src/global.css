@@ -1,3 +1,4 @@
+/* stylelint-disable color-function-alias-notation, color-hex-length */
 :root {
     color-scheme: dark;
     --matrix-bg: #040805;
