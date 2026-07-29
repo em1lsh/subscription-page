@@ -27,7 +27,7 @@ export function MatrixBackdrop() {
                         key={`${stream}-${index}`}
                         style={
                             {
-                                '--stream-index': index,
+                                '--stream-left': `${3.5 + index * 8.35}%`,
                                 '--stream-delay': `${-(index * 1.37)}s`,
                                 '--stream-duration': `${14 + (index % 5) * 2.25}s`
                             } as CSSProperties
